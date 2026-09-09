@@ -80,7 +80,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    gap: 60px;
+    gap: 40px;
 
     min-height: 350px;
 
@@ -166,7 +166,7 @@ body {
 .services-container {
     display: grid;
 
-    grid-template-columns : repeat(4, 1fr); /*Create 4 columns with the same size*/
+    grid-template-columns : repeat(4, minmax(0,1fr)); /*Create 4 columns with the same size*/
 
     gap: 12px;
 
@@ -183,6 +183,8 @@ body {
     border-radius: 3px;
 
     overflow: hidden;
+
+    min-width: 0;
 }
 
 .service-card img {
